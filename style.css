@@ -1,0 +1,147 @@
+body{
+    background-image: url("background2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#h1-2{
+    background: linear-gradient(to left, skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#p1{
+    color: black;
+    font-family: "consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: dotted underline;
+    font-size: 18px;
+    margin-top: 50px;
+    /* use percentages instead of px to let elements resize 
+    dynamically or auto*/
+
+}
+
+#box1{
+    border: 5px solid;
+    width: 250;
+    height: 250;
+    font-size: 22px;
+    background: green;
+
+}
+
+.even{
+    color: red;
+    border-style:outset;
+    border-width:8px;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(to left skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img{
+    float: left;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 40px;
+    text-align: center;
+    background: tomato;
+
+    float: right;
+
+}
+
+#box2{
+    border: 1px;
+    height: 150px;
+    width: 1000px;
+    background-color: skyblue;
+
+    position: fixed;
+
+    top: 150px;
+    bottom: 150px;
+
+    /* position: sticky;
+    top:100;
+    bottom100;*/
+
+}
+
+#box3{
+    border: 1px;
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+
+    position: absolute;
+
+    top: 100px;
+    left: 50px;
+
+
+}
+
+a:link{
+    color: red;
+
+}
+
+a:visited{
+    color:gray
+}
+
+a:hover{
+    color: purple;
+}
+
+a:active{
+    color: yellow;
+
+}
+
+#button1:hover{
+    background-color: lightblue;
+}
+
+#button1:active{
+    background-color: wheat;
+}
+
+li:nth-child(2){
+    background-color: yellow;
+}
+
+#h1-1{
+    text-shadow: 10px 5px 5px grey;
+}
+
+.fa-house{
+    color: blue;
+
+}
+
+#box5{
+    border: 4px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 100px;
+    text-align: center;
+    background: lightblue;
+
+    transform: translateX(50px);
+    transform: rotateX(180deg);
+    transform: skew(20deg,20deg);
+}

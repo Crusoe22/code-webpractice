@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My first website</title>
+    <!-- ONLY ADD META TAGS TO HEAD ELEMENT OF DOCUMENT -->
+    <!-- Meta tags allow us to tell user about information about our website-->
+    <meta charset="UTF-8">
+    <meta name="description" content="content of meta tags">
+    <meta name="keywords" content="HTML, beginners">
+
+    <!-- this meta tag will allow the webpage to readjust for iphone screens-->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <!-- automatically refresh webpage after given amount of seconds -->
+    <meta http-equiv="refresh" content="300">
+
+</head>
+<body style="background-color: lightblue;">
+
+    <!--this is a comment-->
+    <h1 style="color: red;">I like pizza</h1>
+    <hr>
+    <br>
+    <p style="background-color: darkolivegreen; color: brown;">this is a paragraph element</p>
+
+    <!--set hyperlink so it opens in new window-->
+    <a href="https://www.google.com" target="_blank" title="This sends you to google"> 
+        Google
+    </a>
+
+    <br>
+
+    <!--set hyperlink so it opens in new window (target=_self) will keep user on same page-->
+    <a href="page2.html" target="_blank" title="This sends you to google"> 
+        page 2
+    </a>
+
+    <br>
+
+    <!--send email through hyperlink-->
+    <a href="mailto:nolanmmoss@gmail.com" target="_blank" title="This sends you to google"> 
+        page 2
+    </a>
+        
+    <br>
+
+    <!--add picture and make it a link-->
+    <a href="https://google.com">
+    <img src="/images/apple-touch-icon.png" height="300" title="Batman is looking for you">
+    </a>
+
+    <br>
+    <!--add video-->
+    <video controls src="ScreenRecording 2024-10-09 14.14.15.mp4" width="500">
+        <!--can add different sources incase the browser doesn't support one-->
+        <source src="ScreenRecording 2024-10-09 14.14.15.mp4">
+    </video>
+    
+    <br>
+    <!-- HTML text formatting tags-->
+
+    <p>This is test text</p>
+    <p>This is <b>test</b>test text</p>
+    <p>This is <i>test</i>test text</p>
+    <p>This is test text</p>
+    <p>This is test text</p>
+    <p>This is test text</p>
+    <p>This is test text</p>
+    <p>This is test text</p>
+
+
+    <!-- List in HTML-->
+
+
+    <!-- HTML table-->
+    <table bgcolor="red">
+        <tr bgcolor="grey">
+            <th>Nolan</th>
+            <th>Percy</th>
+        </tr>
+        <tr bgcolor="blue" align="center">
+            <td>6'4</td>
+            <td>2'3</td>
+        </tr>
+
+    </table>
+
+    <!-- span- adds markup to text portion of a document -->
+    <!-- div = defines a division of a document-->
+    <!-- meta tags-->
+
+    <div style="background-color: darkblue;">
+    <p><span style="color:red">this is what span can dooo</span>this is text to show. what we are goinng to be ddddddooooointg
+        hello doggies this is a website for dogs
+    </p>
+    </div>
+
+    
+
+    <!-- add Buttons-->
+    <a href="page2.html">
+        <button style="background-color: lightsalmon; color: greenyellow; border-radius: 5px;">Click page 2</button>
+    </a>
+
+
+    <!-- On click attribute that can be set equal to a javascript function-->
+    <br>
+    <button onclick="doSomething()" style="background-color: red;">On click</button>
+
+    <p id="test">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Goodbye";
+        }
+    </script>
+
+
+    <br>
+    <!-- Form element (action="action_page.php" method="POST") -->
+    <form>
+        <div>
+            <label for="fname">firstname</label>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div>
+
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" placeholder="password" required maxlength="12">
+        </div>
+
+        <br>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required maxlength="12">
+        </div>
+
+        <br>
+
+        <br>
+        <div>
+            <label for="phone">phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123)832-9943" required maxlength="12">
+        </div>
+
+        <br>
+
+        <br>
+        <div>
+            <label for="date">date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="quantity">quantity:</label>
+            <input type="numeber" id="quantity" name="quantity" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="title">title:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="payment">payment</label>
+            <select name="payment" id="payment">
+                <option value="visa">visa</option>
+                <option value="gift">gift</option>
+
+            </select>
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="subscribe">sub:</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+        </div>
+
+
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    <br>
+    <!-- iframe = embed content from another source into an HTML document
+                    can embed a webpage or another HTML document 
+                    ex. used for ads, used in many hacking techniques-->
+    <iframe style="border: 10;" src="ad.html">
+
+</body>
+
+</html>
