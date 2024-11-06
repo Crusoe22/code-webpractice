@@ -144,4 +144,18 @@ li:nth-child(2){
     transform: translateX(50px);
     transform: rotateX(180deg);
     transform: skew(20deg,20deg);
+
+    animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes mySlide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+
+@keyframes myRotate{
+    100%{transform: rotateX(360deg);}
 }
